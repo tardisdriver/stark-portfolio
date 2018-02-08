@@ -1,212 +1,80 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-header {
-  width: auto;
-  height: 100px;
-  color: black;
-  margin-top: 50px;
-}
-
-header h1 {
+#intro {
   text-align: center;
-  padding-top: 0px;
-  font-size: 3em;
-  width: 100%;
+  height: 60px;
 }
 
-header h2 {
-  text-align: center;
+#hello {
+  font-size: 1em;
+}
+
+#imma {
+  font-size: 0.8em;
 }
 
 #nav-group {
-  width: 70%;
-  height: 200px;
+  width: 90%;
+  height: 150px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
-  margin-top: 20%;
+  margin-top: 5%;
   padding: 10px;
 }
+
 #projects,
 #about {
-  width: 40%;
-  height: 180px;
+  width: 42%;
+  height: 120px;
+  font-family: "Russo One", sans-serif;
   text-align: center;
   border-radius: 4px;
   color: white;
-  padding-top: 60px;
-  text-shadow: 2px 2px #373737;
+  padding-top: 40px;
+  padding-left: 10px;
+  text-shadow: 2px 3px 10px #285eff;
 }
 
 #projects {
   display: block;
   float: left;
-  background-image: url("../images/codecode.jpg");
+  background-image: url("../images/code1.png");
   background-size: 200%;
 }
 
 #projects h2 {
-  font-size: 3.5em;
+  font-size: 1.6em;
 }
 #about h2 {
-  font-size: 3.5em;
+  font-size: 1.6em;
 }
 
 #about {
   margin-left: 15%;
-  background-image: url("../images/code.jpg");
+  background-image: url("../images/code2.png");
   background-size: cover;
   background-repeat: no-repeat;
-}
-footer {
-  text-align: center;
-  position: fixed;
-  height: 50px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: darkgray;
-  color: white;
-  padding-top: 12px;
-}
-
-.typewriter {
-  position: absolute;
-  margin-top: 150px;
-  margin-left: 150px;
-}
-
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid rgb(20, 255, 36); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 80%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: rgb(20, 255, 36);
-  }
-}
-
-.hexagon {
-  margin-left: 50px;
-  width: 10%;
-  height: 10%;
-  position: relative;
-  float: left;
 }
 
 .cool-things {
   margin-top: 15px;
   margin-bottom: 10px;
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.cool-things ul {
+  text-align: justify;
+  font-size: 0.9em;
+  padding: 10px;
 }
 
 .cool-things h3 {
   text-align: center;
   text-decoration: underline;
+  font-size: 1.2em;
 }
 
-#project-list {
-  width: 75%;
-  margin-top: 80px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.thumbnail {
-  width: 40%;
-  height: 40%;
-  border: 1px solid black;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.stack {
-  font-weight: bold;
-  padding-top: 5px;
-  margin-bottom: 60px;
-}
-
-.github {
-  margin-left: 30px;
-}
-
-.live-demo {
-  margin-left: 30px;
-}
-
-#resume {
-  text-align: center;
-  margin-top: 120px;
-  margin-bottom: 30px;
-}
-
-#about-me {
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 30px;
-  text-align: justify;
-}
-
-#tech {
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#tech ul {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  list-style: none;
-}
-
-#social {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-#git-social {
-  background-color: black;
-}
-
-.home-text {
-  display: inline-block;
-  position: absolute;
-  margin-top: 45px;
-  margin-left: 20px;
-}
-
-.title {
-  margin-bottom: 70px;
-}
-
-.hidden {
-  display: none;
-}
+/* @media only screen and (min-width: 700px) {
+ 
+} */

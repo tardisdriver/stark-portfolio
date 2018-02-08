@@ -3,25 +3,31 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Stark Web Concepts</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div>
-            <img class="hexagon" src="images/logo.png" alt="logo" />
-        </div>
-        <div class="typewriter">
-            <h1>Hello, my name is Tracy Stark</h1>
-            <h2>I'm a Web Designer and Front End Developer in Dallas, TX</h2>
+        <div id='logo'>
+            <img id="hexagon" src="images/logo.png" alt="logo" />
         </div>
     </header>
+    <div id='intro'>
+        <h1 id='hello' class='animated fadeInDownBig'>Hello, my name is Tracy Stark.</h1>
+        <h2 id='imma' class='hidden'>I'm a Web Designer and Front End Developer in Dallas, TX</h2>
+    </div>
 
     <div id="nav-group" class="row">
-        <div id="projects" class="col-md-5" onClick="location.href='projects.html';">
+        <div id="projects" class="col-md-5 view overlay hm-blue-light" onClick="location.href='projects.html';">
             <h2>Projects</h2>
         </div>
         <div id='about' class='col-md-5' onClick="location.href='about.html';">
@@ -41,12 +47,20 @@
                 UX/UI improvements on IBM Cloud. </li>
         </ul>
     </div>
-    <footer class="page-footer">
-        <div>
-            <span class="footer">This webpage built using HTML5 and Bootstrap.</span>
-        </div>
-
+    <footer id="page-footer">
+        <span> &copy; 2018 StarkWebDevelopments.com.</span>
+        <p>This webpage built using HTML5, jQuery, and Bootstrap. </p>
     </footer>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- local jQuery -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
 
 </html>

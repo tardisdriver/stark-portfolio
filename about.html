@@ -3,25 +3,32 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>About Tracy - Stark Web Concepts</title>
-    <link href="css/index.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div>
-            <img class="hexagon" src="images/logo.png" alt="logo" onClick="location.href='index.html';" />
+        <div id='logo' onClick="location.href='index.html';">
+            <img id="hexagon" src="images/logo.png" alt="logo" />
+            <span class='home-text animated flash'>Go Back</span>
         </div>
-        <div class="title">
-            <h1>About</h1>
-        </div>
+    </header>
+    <div class="title">
+        <h1>About</h1>
+    </div>
     </header>
 
     <div id="resume">
-        <a href="docs/resume-Tracy-Stark.pdf" download class="btn btn-primary">Download my Resume
-            <a>
+        <a href="docs/resume-Tracy-Stark.pdf" download class="btn btn-primary">Download my Resume</a>
     </div>
     <div id="social">
         <a href="https://www.linkedin.com/in/tracy-stark/" class="btn btn-primary">LinkedIn</a>
@@ -55,8 +62,20 @@
             <li>Illustrator</li>
         </ul>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+    <footer id="page-footer">
+        <span> &copy; 2018 StarkWebDevelopments.com.</span>
+        <p>This webpage built using HTML5, jQuery, and Bootstrap. </p>
+    </footer>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- local jQuery -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
 
 </html>

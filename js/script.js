@@ -1,11 +1,30 @@
-$(".hexagon").mouseenter(function() {
-  $(".home-text").fadeIn(1000, function() {
-    $(".home-text").removeClass("hidden");
-  });
+$("#hello").one(
+  "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+  function() {
+    $("#imma")
+      .addClass("animated fadeInUp")
+      .removeClass("hidden");
+  }
+);
+
+$("#imma").one(
+  "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+  function() {
+    $("#projects").addClass("animated pulse");
+  }
+);
+
+$("#projects").one(
+  "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+  function() {
+    $("#about").addClass("animated pulse");
+  }
+);
+
+$("#hexagon").mouseenter(function() {
+  $("#hexagon").addClass("animated pulse");
 });
 
-$(".hexagon").mouseleave(function() {
-  $(".home-text").fadeOut(1000, function() {
-    $(".home-text").addClass("hidden");
-  });
+$("#hexagon").mouseout(function() {
+  $("#hexagon").removeClass("animated pulse");
 });

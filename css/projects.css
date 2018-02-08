@@ -1,0 +1,40 @@
+#project-list {
+  width: 75%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#project h2 {
+  font-size: 1.1em;
+}
+
+.thumbnail {
+  width: 40%;
+  height: 40%;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.stack {
+  font-weight: bold;
+  padding-top: 5px;
+  margin-bottom: 60px;
+}
+
+.github {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.live-demo {
+  margin-left: 30px;
+  width: 40%;
+  margin-top: 0;
+}
+
+.description {
+  margin-top: 5px;
+  font-size: 0.8em;
+}

@@ -3,23 +3,31 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Projects -Stark Web Concepts</title>
-    <link href="css/index.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/projects.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div>
-            <img class="hexagon" src="images/logo.png" alt="logo" onClick="location.href='index.html';" />
-        </div>
-        <div class="title">
-            <h1>Projects</h1>
+        <div id='logo' onClick="location.href='index.html';">
+            <img id="hexagon" src="images/logo.png" alt="logo" />
+            <span class='home-text animated flash'>Go Back</span>
         </div>
     </header>
+    <div class="title">
+        <h1>Projects</h1>
+    </div>
+    </header>
     <div id="project-list">
-        <div class="project">
+        <div id="project">
             <h2>SHRUB - The tech support chat bot</h2>
             <div>
                 <img class="thumbnail" src="images/shrub-cap.png" alt="SHRUB Project Thumbnail" />
@@ -37,7 +45,7 @@
             </div>
         </div>
 
-        <div class="project">
+        <div id="project">
             <h2>Travel Buddy - Budget your travel expenses</h2>
             <div>
                 <img class="thumbnail" src="images/travel-cap.png" alt="Travel Buddy Project Thumbnail" />
@@ -53,7 +61,7 @@
             </div>
         </div>
 
-        <div class="project">
+        <div id="project">
             <h2>Dinner and a Beer - Perfect beer pairings for random recipes</h2>
             <div>
                 <img class="thumbnail" src="images/beer-cap.png" alt="Dinner and a Beer Project Thumbnail" />
@@ -71,12 +79,20 @@
             </div>
         </div>
     </div>
-    <footer class="page-footer">
-        <div>
-            <span class="footer">This webpage built using HTML5 and Bootstrap.</span>
-        </div>
-
+    <footer id="page-footer">
+        <span> &copy; 2018 StarkWebDevelopments.com.</span>
+        <p>This webpage built using HTML5, jQuery, and Bootstrap. </p>
     </footer>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- local jQuery -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
 </body>
 
 </html>
