@@ -28,3 +28,11 @@ $("#hexagon").mouseenter(function() {
 $("#hexagon").mouseout(function() {
   $("#hexagon").removeClass("animated pulse");
 });
+
+$(".thumbnail").mouseenter(function() {
+  $(this).addClass("animated rubberBand");
+});
+
+$(".thumbnail").mouseout(function() {
+  $(this).removeClass("animated rubberBand");
+});
