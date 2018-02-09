@@ -6,18 +6,7 @@
 header {
   width: auto;
   height: 50px;
-  color: black;
   margin-top: 20px;
-}
-
-header h1 {
-  text-align: center;
-  font-size: 3em;
-  width: 100%;
-}
-
-header h2 {
-  text-align: center;
 }
 
 #page-footer {
@@ -63,4 +52,26 @@ header h2 {
 
 .footer {
   padding-top: 0;
+}
+
+@media only screen and (min-width: 700px) {
+  header {
+    height: 70px;
+  }
+
+  #hexagon {
+    width: 33%;
+    height: 33%;
+  }
+
+  .home-text {
+    margin-left: 46px;
+    margin-top: 88px;
+    font-size: 1em;
+  }
+
+  .title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }

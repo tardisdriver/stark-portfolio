@@ -23,7 +23,7 @@
   margin-bottom: 60px;
 }
 
-.github {
+#github-btn {
   margin-left: 20px;
   margin-bottom: 10px;
 }
@@ -37,4 +37,36 @@
 .description {
   margin-top: 5px;
   font-size: 0.8em;
+}
+
+@media only screen and (min-width: 700px) {
+  #project-list {
+    width: 85%;
+  }
+
+  #project h2 {
+    font-size: 1.8em;
+  }
+
+  .stack {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .description {
+    font-size: 1em;
+  }
+
+  #github-btn {
+    margin-left: 25%;
+    width: 35%;
+    position: absolute;
+  }
+
+  .live-demo {
+    margin-left: 30px;
+    margin-top: 6px;
+    position: absolute;
+    width: 20%;
+  }
 }

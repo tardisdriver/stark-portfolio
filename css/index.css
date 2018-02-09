@@ -75,6 +75,41 @@
   font-size: 1.2em;
 }
 
-/* @media only screen and (min-width: 700px) {
- 
-} */
+@media only screen and (min-width: 750px) {
+  #intro {
+    text-align: center;
+    height: 100px;
+  }
+
+  #hello {
+    font-size: 2em;
+  }
+
+  #imma {
+    font-size: 1.8em;
+  }
+
+  #nav-group {
+    width: 80%;
+    height: 200px;
+  }
+
+  #projects,
+  #about {
+    width: 64%;
+    height: 200px;
+    padding-top: 80px;
+  }
+
+  .cool-things {
+    margin-top: 35px;
+  }
+
+  .cool-things ul {
+    font-size: 1.2em;
+  }
+
+  .cool-things h3 {
+    font-size: 1.8em;
+  }
+}
