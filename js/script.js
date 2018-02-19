@@ -30,9 +30,9 @@ $("#hexagon").mouseout(function() {
 });
 
 $(".thumbnail").mouseenter(function() {
-  $(this).addClass("animated rubberBand");
+  $(this).addClass("animated flash");
 });
 
 $(".thumbnail").mouseout(function() {
-  $(this).removeClass("animated rubberBand");
+  $(this).removeClass("animated flash");
 });
