@@ -12,75 +12,85 @@
     <link href="css/global.css" rel="stylesheet">
     <link href="css/projects.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
     <header>
         <div id='logo' onClick="location.href='index.html';">
-            <img id="hexagon" src="images/logo.png" alt="logo" />
+            <img id="hexagon" src="images/logo.png" alt="Go back to home page" />
             <span class='home-text animated flash'>Go Back</span>
         </div>
     </header>
-    <div class="title">
-        <h1>Projects</h1>
-    </div>
-    </header>
-    <div id="project-list">
-        <div id="project">
-            <h2>SHRUB - The tech support chat bot</h2>
-            <div>
-                <img class="thumbnail" src="images/shrub-cap.png" alt="SHRUB Project Thumbnail" onClick="location.href='https://shrub.netlify.com';"
-                />
-                <a href="https://shrub.netlify.com" target="_blank" class="btn btn-info live-demo">Live Demo</a>
-                <a href='https://github.com/tardisdriver/cust-support-ai-chat-FE' id="github-btn" class="btn btn-info" target="_blank">Check this out on GitHub</a>
-            </div>
-            <div class="description">
-                <p>NOTE: This app is currently under active development. If it is not functioning, please check back later.</p>
-                <span>SHRUB stands for Support Helper Utility Responsive Bot. She is intended to sit between consumers and human
-                    tech support for a ocmputer company and handle frequently asked questions in an intelligent way. She
-                    uses IBM Watson Conversation and Discovery APIs, and thus is still currently learning how to do her job!</span>
-            </div>
-            <div class="stack">
-                <span>Stack used: ReactJS, NodeJS, MongoDB, Watson APIs</span>
-            </div>
+    <main>
+        <div class="title">
+            <h1>Projects</h1>
         </div>
+        </header>
+        <div id="project-list">
+            <div id="project">
+                <h2>SHRUB - The tech support chat bot</h2>
+                <div>
+                    <img class="thumbnail" src="images/shrub-cap.png" alt="SHRUB Project Thumbnail" onClick="location.href='https://shrub.netlify.com';"
+                    />
+                    <a href="https://shrub.netlify.com" target="_blank" class="btn btn-info live-demo">Live Demo</a>
+                    <a href='https://github.com/tardisdriver/cust-support-ai-chat-FE' id="github-btn" class="btn btn-info" target="_blank">Check this out on GitHub</a>
+                </div>
+                <div class="description">
+                    <p>NOTE: This app is currently under active development. If it is not functioning, please check back later.</p>
+                    <span>SHRUB stands for Support Helper Utility Responsive Bot. She is intended to sit between consumers and
+                        human tech support for a computer company and handle frequently asked questions in an intelligent
+                        way. She uses IBM Watson Conversation and Discovery APIs, and thus is still currently learning how
+                        to do her job!</span>
+                </div>
+                <div class="stack">
+                    <span>Stack used: ReactJS, NodeJS, MongoDB, Watson APIs</span>
+                </div>
+            </div>
 
-        <div id="project">
-            <h2>Travel Buddy - Budget your travel expenses</h2>
-            <div>
-                <img class="thumbnail" src="images/travel-cap.png" alt="Travel Buddy Project Thumbnail" onClick="location.href='https://afternoon-badlands-72160.herokuapp.com/';"
-                />
-                <a href="https://afternoon-badlands-72160.herokuapp.com/" target="_blank" class="btn btn-info live-demo">Live Demo</a>
-                <a href="https://github.com/tardisdriver/travel_capstone" id="github-btn" class="btn btn-info" target="_blank">Check this out on GitHub</a>
+            <div id="project">
+                <h2>Travel Buddy - Budget your travel expenses</h2>
+                <div>
+                    <img class="thumbnail" src="images/travel-cap.png" alt="Travel Buddy Project Thumbnail" onClick="location.href='https://afternoon-badlands-72160.herokuapp.com/';"
+                    />
+                    <a href="https://afternoon-badlands-72160.herokuapp.com/" target="_blank" class="btn btn-info live-demo">Live Demo</a>
+                    <a href="https://github.com/tardisdriver/travel_capstone" id="github-btn" class="btn btn-info" target="_blank">Check this out on GitHub</a>
+                </div>
+                <div class="description">
+                    <span>Travel Buddy easily stores your travel budget information locally through your browser, or if you'd like
+                        to access your trip information on multiple devices, you can also save your progress to the server.</span>
+                </div>
+                <div class="stack">
+                    <span>Stack used: HTML, CSS, JS, NodeJS, MongoDB</span>
+                </div>
             </div>
-            <div class="description">
-                <span>Travel Buddy easily stores your travel budget information locally through your browser, or if you'd like
-                    to access your trip information on multiple devices, you can also save your progress to the server.</span>
-            </div>
-            <div class="stack">
-                <span>Stack used: HTML, CSS, JS, NodeJS, MongoDB</span>
-            </div>
-        </div>
 
-        <div id="project">
-            <h2>Dinner and a Beer - Perfect beer pairings for random recipes</h2>
-            <div>
-                <img class="thumbnail" src="images/beer-cap.png" alt="Dinner and a Beer Project Thumbnail" onClick="location.href='http://bartender-sarah-24300.netlify.com/';"
-                />
-                <a href="http://bartender-sarah-24300.netlify.com/" target="_blank" class="btn btn-info live-demo">Live Demo</a>
-                <a href="https://github.com/tardisdriver/dinner_and_a_beer" id="github-btn" class="btn btn-info" target="_blank">Check this out on GitHub</a>
-            </div>
-            <div class="description">
-                <span>Dinner and a Beer allows the user to select which protein/entree type they'd like, and the app will suggest
-                    a random beer in a style that matches the recipe. Perfect for indecisive beer lovers looking to try new
-                    brews.
-                </span>
-            </div>
-            <div class="stack">
-                <span>Stack used: HTML, CSS, jQuery, Edamam API, BreweryDB API</span>
+            <div id="project">
+                <h2>Dinner and a Beer - Perfect beer pairings for random recipes</h2>
+                <div>
+                    <img class="thumbnail" src="images/beer-cap.png" alt="Dinner and a Beer Project Thumbnail" onClick="location.href='http://bartender-sarah-24300.netlify.com/';"
+                    />
+                    <a href="http://bartender-sarah-24300.netlify.com/" target="_blank" class="btn btn-info live-demo">Live Demo</a>
+                    <a href="https://github.com/tardisdriver/dinner_and_a_beer" id="github-btn" class="btn btn-info" target="_blank">Check this out on GitHub</a>
+                </div>
+                <div class="description">
+                    <span>Dinner and a Beer allows the user to select which protein/entree type they'd like, and the app will suggest
+                        a random beer in a style that matches the recipe. Perfect for indecisive beer lovers looking to try
+                        new brews.
+                    </span>
+                </div>
+                <div class="stack">
+                    <span>Stack used: HTML, CSS, jQuery, Edamam API, BreweryDB API</span>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
     <footer id="page-footer">
         <span> &copy; 2018 StarkWebDevelopments.com.</span>
         <p>This webpage built using HTML5, jQuery, and Bootstrap. </p>

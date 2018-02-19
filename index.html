@@ -12,6 +12,13 @@
     <link href="css/global.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -20,32 +27,36 @@
             <img id="hexagon" src="images/logo.png" alt="logo" />
         </div>
     </header>
-    <div id='intro'>
-        <h1 id='hello' class='animated fadeInDownBig'>Hello, my name is Tracy Stark.</h1>
-        <h2 id='imma' class='hidden'>I'm a Web Designer and Front End Developer in Dallas, TX</h2>
-    </div>
-
-    <div id="nav-group" class="row">
-        <div id="projects" class="col-md-5 view overlay hm-blue-light" onClick="location.href='projects.html';">
-            <h2>Projects</h2>
+    <main>
+        <div id='intro'>
+            <h1 id='hello' class='animated fadeInDownBig'>Hello, my name is Tracy Stark.</h1>
+            <h2 id='imma' class='hidden'>I'm a Web Designer and Front End Developer in Dallas, TX</h2>
         </div>
-        <div id='about' class='col-md-5' onClick="location.href='about.html';">
-            <h2>About</h2>
+        <nav>
+            <div id="nav-group" class="row">
+                <div id="projects" class="col-md-5 view overlay hm-blue-light" onClick="location.href='projects.html';" alt="projects">
+                    <h2>Projects</h2>
+                </div>
+                <div id='about' class='col-md-5' onClick="location.href='about.html';" alt="about">
+                    <h2>About</h2>
+                </div>
+            </div>
+        </nav>
+        <div class="cool-things">
+            <h3>Cool things I'm currently working on</h3>
+            <ul>
+                <li>I'm currently
+                    <a href="https://github.com/tardisdriver/cust-support-ai-chat-FE">building a chatbot</a> using IBM's Watson API that will be able to help customers troubleshoot their
+                    computer.
+                </li>
+                <li>I was accepted for a scholarship to the
+                    <a href="https://www.udacity.com/grow-with-google">Udacity Grow WIth Google program.</a>
+                </li>
+                <li>I'm currently an active participant in IBM's Cloud Testing Network. I give direct feedback on prototypes
+                    for UX/UI improvements on IBM Cloud. </li>
+            </ul>
         </div>
-    </div>
-    <div class="cool-things">
-        <h3>Cool things I'm currently working on</h3>
-        <ul>
-            <li>I'm currently
-                <a href="https://github.com/tardisdriver/cust-support-ai-chat-FE">building a chatbot</a> using IBM's Watson API that will be able to help customers troubleshoot their computer.
-            </li>
-            <li>I was accepted for a scholarship to the
-                <a href="https://www.udacity.com/grow-with-google">Udacity Grow WIth Google program.</a>
-            </li>
-            <li>I'm currently an active participant in IBM's Cloud Testing Network. I give direct feedback on prototypes for
-                UX/UI improvements on IBM Cloud. </li>
-        </ul>
-    </div>
+    </main>
     <footer id="page-footer">
         <span> &copy; 2018 StarkWebDevelopments.com.</span>
         <p>This webpage built using HTML5, jQuery, and Bootstrap. </p>
