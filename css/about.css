@@ -5,15 +5,17 @@
 }
 
 #about-me {
-  width: 88%;
-  margin-right: auto;
-  margin-left: auto;
+  width: 60%;
+  float: left;
+  margin-left: 10%;
   margin-bottom: 30px;
   text-align: justify;
   font-size: 0.8em;
 }
 
 #tech {
+  display: block;
+  clear: both;
   width: 88%;
   margin-right: auto;
   margin-left: auto;
@@ -34,4 +36,14 @@
 
 #git-social {
   background-color: black;
+}
+
+#headshot {
+  display: block;
+  margin-right: 10%;
+  width: 15%;
+  height: 15%;
+  border-radius: 250px;
+  float: right;
+  clear: both;
 }

@@ -10,14 +10,14 @@ $("#hello").one(
 $("#imma").one(
   "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
   function() {
-    $("#projects").addClass("animated pulse");
+    $("#projects").addClass("animated fadeIn");
   }
 );
 
 $("#projects").one(
   "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
   function() {
-    $("#about").addClass("animated pulse");
+    $("#about").addClass("animated fadeIn");
   }
 );
 
@@ -27,12 +27,4 @@ $("#hexagon").mouseenter(function() {
 
 $("#hexagon").mouseout(function() {
   $("#hexagon").removeClass("animated pulse");
-});
-
-$(".thumbnail").mouseenter(function() {
-  $(this).addClass("animated flash");
-});
-
-$(".thumbnail").mouseout(function() {
-  $(this).removeClass("animated flash");
 });

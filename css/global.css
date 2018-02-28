@@ -3,6 +3,14 @@
   margin: 0;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
 header {
   width: auto;
   height: 50px;

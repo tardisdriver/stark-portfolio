@@ -5,16 +5,27 @@
   margin-right: auto;
 }
 
+#project-list a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+#project-list a:hover {
+  cursor: pointer;
+  color: white;
+}
+
 #project h2 {
   font-size: 1.1em;
 }
 
 .thumbnail {
-  width: 40%;
-  height: 40%;
+  width: 100%;
+  height: 100%;
   border: 1px solid black;
   border-radius: 4px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .stack {
@@ -24,19 +35,22 @@
 }
 
 #github-btn {
-  margin-left: 20px;
-  margin-bottom: 10px;
-  z-index: -1;
+  margin: 10px 0 10px 6%;
 }
 
-.live-demo {
-  margin-left: 30px;
-  width: 40%;
-  margin-top: 0;
+.proj-button {
+  display: block;
+  background-color: darkcyan;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px;
 }
 
 #demo-btn {
   z-index: -2;
+  width: 40%;
+  margin: 10px 0 10px 33%;
 }
 
 .description {
@@ -59,19 +73,27 @@
   }
 
   .description {
+    margin-top: 18%;
+    display: block;
     font-size: 1em;
+    clear: both;
+  }
+  .thumbnail {
+    width: 355px;
+    height: 255px;
+    float: left;
+    object-fit: cover;
   }
 
   #github-btn {
-    margin-left: 25%;
+    margin-left: 50%;
     width: 35%;
     position: absolute;
   }
 
-  .live-demo {
-    margin-left: 30px;
-    margin-top: 6px;
-    position: absolute;
-    width: 20%;
+  #demo-btn {
+    float: clear;
+    width: 35%;
+    margin-left: 50%;
   }
 }
