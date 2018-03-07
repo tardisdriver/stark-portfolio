@@ -7,20 +7,6 @@ $("#hello").one(
   }
 );
 
-$("#imma").one(
-  "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
-  function() {
-    $("#projects").addClass("animated fadeIn");
-  }
-);
-
-$("#projects").one(
-  "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
-  function() {
-    $("#about").addClass("animated fadeIn");
-  }
-);
-
 $("#hexagon").mouseenter(function() {
   $("#hexagon").addClass("animated pulse");
 });

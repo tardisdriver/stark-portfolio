@@ -11,7 +11,11 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <link href="css/global.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link href="css/projects.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -22,40 +26,137 @@
 </head>
 
 <body>
-    <header>
-        <div id='logo'>
-            <img id="hexagon" src="images/logo.png" alt="logo" />
-        </div>
-    </header>
-    <main>
-        <div id='intro'>
-            <h1 id='hello' class='animated fadeInDownBig'>Hello, my name is Tracy Stark.</h1>
-            <h2 id='imma' class='hidden'>I'm a Web Designer and Front End Developer in Dallas, TX</h2>
-        </div>
-        <nav>
-            <div id="nav-group" class="row">
-                <div id="projects" class="col-md-5 view overlay hm-blue-light link" onClick="location.href='projects.html';" alt="projects">
-                    <h2>Projects</h2>
+    <div id="intro-section">
+        <img id="hexagon" src="images/logo.png" alt="logo" />
+        <main>
+            <div id='intro'>
+                <div id="greet">
+                    <h1 id='hello' class='animated fadeInDownBig'>Hello, my name is Tracy Stark.</h1>
+                    <h2 id='imma' class='hidden'>I'm a Web Designer and Front End Developer in Dallas, TX</h2>
                 </div>
-                <div id='about' class='col-md-5 link' onClick="location.href='about.html';" alt="about">
-                    <h2>About</h2>
+                <div id="learn">
+                    <p>Learn more about me</p>
+                    <i class='fa fa-chevron-down'></i>
+                </div>
+
+            </div>
+    </div>
+    <div class="cool-things">
+        <h3>Cool things I'm currently working on</h3>
+        <ul>
+            <li>I'm currently
+                <a href="https://github.com/tardisdriver/cust-support-ai-chat-FE">building a chatbot</a> using IBM's Watson API that will be able to help customers troubleshoot their computer.
+            </li>
+            <li>I was accepted for a scholarship to the
+                <a href="https://www.udacity.com/grow-with-google">Udacity Grow With Google program</a> and am now a
+                <a href="https://academy.exceedlms.com/student/users/1307350">Certified Google Mobile Developer</a>.
+            </li>
+            <li>I'm currently an active participant in IBM's Cloud Testing Network. I give direct feedback on prototypes for
+                UX/UI improvements on IBM Cloud. </li>
+        </ul>
+    </div>
+    <div class="title">
+        <h1>Projects</h1>
+    </div>
+    <div id="project-list">
+        <div class="project">
+            <h2>SHRUB - The tech support chat bot</h2>
+            <div>
+                <img class="thumbnail" src="images/shrub-cap.png" alt="SHRUB Project Thumbnail" onClick="location.href='https://shrub.netlify.com';"
+                />
+                <a href='https://shrub.netlify.com' id='demo-btn' class='proj-button' target='_blank'>Live Demo</a>
+                <a href='https://github.com/tardisdriver/cust-support-ai-chat-FE' id='github-btn' class='proj-button' target="_blank">Check this out on GitHub</a>
+            </div>
+            <div class="description">
+                <p>NOTE: This app is currently under active development. If it is not functioning, please check back later.</p>
+                <span>SHRUB stands for Support Helper Utility Responsive Bot. She is intended to sit between consumers and human
+                    tech support for a computer company and handle frequently asked questions in an intelligent way. She
+                    uses IBM Watson Conversation and Discovery APIs, and thus is still currently learning how to do her job!</span>
+            </div>
+            <div class="stack">
+                <span>Stack used: ReactJS, NodeJS, MongoDB, Watson APIs</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <h2>Travel Buddy - Budget your travel expenses</h2>
+            <div>
+                <img class="thumbnail" src="images/travel-cap.png" alt="Travel Buddy Project Thumbnail" onClick="location.href='https://app-travel-buddy.herokuapp.com/';"
+                />
+                <a href="https://app-travel-buddy.herokuapp.com/" id="demo-btn" class='proj-button' target="_blank">Live Demo</a>
+                <a href="https://github.com/tardisdriver/travel_capstone" id="github-btn" class="proj-button" target="_blank">Check this out on GitHub</a>
+            </div>
+            <div class="description">
+                <span>Travel Buddy easily stores your travel budget information locally through your browser, or if you'd like
+                    to access your trip information on multiple devices, you can also save your progress to the server.</span>
+            </div>
+            <div class="stack">
+                <span>Stack used: HTML, CSS, JS, NodeJS, MongoDB</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <h2>Dinner and a Beer - Perfect beer pairings for random recipes</h2>
+            <div>
+                <img class="thumbnail" src="images/beer-cap.png" alt="Dinner and a Beer Project Thumbnail" onClick="location.href='http://dinner-and-a-beer.netlify.com/';"
+                />
+                <a href="http://dinner-and-a-beer.netlify.com/" id="demo-btn" id="demo-btn" class='proj-button' target="_blank">Live Demo</a>
+                <a href="https://github.com/tardisdriver/dinner_and_a_beer" id="github-btn" class="proj-button" target="_blank">Check this out on GitHub</a>
+            </div>
+            <div class="description">
+                <span>Dinner and a Beer allows the user to select which protein/entree type they'd like, and the app will suggest
+                    a random beer in a style that matches the recipe. Perfect for indecisive beer lovers looking to try new
+                    brews.
+                </span>
+            </div>
+            <div class="stack">
+                <span>Stack used: HTML, CSS, jQuery, Edamam API, BreweryDB API</span>
+            </div>
+        </div>
+    </div>
+    <div id=about-section>
+        <div class="title">
+            <h1>About</h1>
+        </div>
+        <div id="resume">
+            <a href="docs/resume-Tracy-Stark.pdf" download class="btn btn-primary">Download my Resume</a>
+        </div>
+        <div id="social">
+            <a href="https://www.linkedin.com/in/tracy-stark/" class="btn btn-primary">LinkedIn</a>
+            <a href="https://github.com/tardisdriver" id="git-social" class="btn btn-primary">GitHub</a>
+            <a href="https://twitter.com/tardisdriver13" class="btn btn-info">Twitter</a>
+            <a class="btn btn-success" id="email" href="mailto:&#115;&#116;&#97;&#114;&#107;.tra&#99;&#121;&#64;&#103;&#109;a&#105;&#108;.c&#111;m">
+                &#115;&#116;&#97;&#114;&#107;.tra&#99;&#121;&#64;&#103;&#109;a&#105;&#108;.c&#111;m</a>
+        </div>
+        <div id="about-me">
+            <div id="certs">
+                <div class='certification'>
+                    <img class='cert-img' src='images/logo_analytics.png' alt='Google Analytics Certification' />
+                    <a href='https://analytics.google.com/analytics/academy/course/6/certificate' class='cert-name'>Google Analytics Certified</a>
+                </div>
+                <div class='certification'>
+                    <img class='cert-img' src='images/Mobile_Sites_Certification.png' alt='Google Mobile Developer Certification' />
+                    <a href='https://academy.exceedlms.com/student/users/1307350' class='cert-name'>Google Mobile Sites Certified Developer</a>
                 </div>
             </div>
-        </nav>
-        <div class="cool-things">
-            <h3>Cool things I'm currently working on</h3>
-            <ul>
-                <li>I'm currently
-                    <a href="https://github.com/tardisdriver/cust-support-ai-chat-FE">building a chatbot</a> using IBM's Watson API that will be able to help customers troubleshoot their
-                    computer.
-                </li>
-                <li>I was accepted for a scholarship to the
-                    <a href="https://www.udacity.com/grow-with-google">Udacity Grow WIth Google program.</a>
-                </li>
-                <li>I'm currently an active participant in IBM's Cloud Testing Network. I give direct feedback on prototypes
-                    for UX/UI improvements on IBM Cloud. </li>
-            </ul>
+            <img src="images/tracy_stark.jpg" id="headshot" alt='Tracy Stark' />
+            <div id="about-text">
+                <p>While I was in the Army in the early 2000's, I spent my spare time teaching myself HTML for fun. Over the
+                    course of the next several years, that learning blossomed into CSS and JavaScript. Recently, I wanted
+                    to take my passion to the next level and pursue Front End Development as a career, so I joined up with
+                    the Thinkful bootcamp and have since bolstered my development knowledge. I am specifically looking to
+                    work on a team of talented, imaginative programmers.
+                </p>
+                <p>My other love is science, and to that effect I recieved a B.S. in Biological Sciences from University of
+                    Texas at Arlington. I hope to use the knowledge I gained there as I begin to learn and develop sophisticated
+                    Machine Learning and Artificial Intelligence applications.</p>
+                <p>Outside of web coding, I enjoy my yearly camping trip, teaching others how to code, discovering new music,
+                    and working on writing a novel one day. </p>
+            </div>
         </div>
+        <div id="tech">
+        </div>
+    </div>
     </main>
     <footer id="page-footer">
         <div class="footer">

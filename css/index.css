@@ -1,6 +1,19 @@
+/* Intro Zone */
+
 #intro {
+  position: relative;
   text-align: center;
-  height: 60px;
+  height: 65vh;
+  font-family: "Rammetto One", cursive;
+  margin-bottom: 0;
+}
+
+#hexagon {
+  padding-top: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
 }
 
 #hello {
@@ -11,56 +24,36 @@
   font-size: 0.8em;
 }
 
-#nav-group {
-  width: 90%;
-  height: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 4px;
-  margin-top: 5%;
-  padding: 10px;
+#greet {
+  margin-top: 15vh;
 }
 
-#projects,
-#about {
-  width: 42%;
-  height: 120px;
-  font-family: "Russo One", sans-serif;
-  text-align: center;
-  border-radius: 4px;
-  color: white;
-  padding-top: 40px;
-  padding-left: 10px;
-  text-shadow: 2px 3px 10px #285eff;
+#learn {
+  position: absolute;
+  display: inline-block;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
-#projects {
-  display: block;
-  float: left;
-  background-image: url("../images/code1.png");
-  background-size: 200%;
-}
-
-#projects h2 {
-  font-size: 1.6em;
-}
-#about h2 {
-  font-size: 1.6em;
-}
-
-#about {
-  margin-left: 15%;
-  background-image: url("../images/code2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
+/* Cool things zone */
 .cool-things {
-  margin-top: 15px;
   margin-bottom: 20px;
-  width: 80%;
+  padding: 55px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  background-color: DimGrey;
+  color: white;
+}
+
+.cool-things a:link {
+  color: #98e6e4;
+}
+
+.cool-things a:visited {
+  color: #98e6e4;
 }
 
 .cool-things ul {
@@ -71,14 +64,21 @@
 
 .cool-things h3 {
   text-align: center;
-  text-decoration: underline;
   font-size: 1.2em;
 }
 
+/* Desktop/tablet */
 @media only screen and (min-width: 750px) {
-  #intro {
-    text-align: center;
-    height: 100px;
+  #hexagon {
+    padding-top: 60px;
+    width: 10%;
+  }
+
+  #intro-section {
+    margin: 0;
+    background-image: url("../images/pexels-photo.png");
+    background-size: cover;
+    background-color: white;
   }
 
   #hello {
@@ -102,7 +102,8 @@
   }
 
   .cool-things {
-    margin-top: 35px;
+    height: 450px;
+    padding-top: 10%;
   }
 
   .cool-things ul {

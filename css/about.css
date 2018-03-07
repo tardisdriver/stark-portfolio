@@ -2,10 +2,18 @@
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  z-index: -2;
+}
+
+#about-section {
+  background-color: dimgray;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 50px;
 }
 
 #about-me {
-  width: 60%;
+  width: 75%;
   float: left;
   margin-left: 10%;
   margin-bottom: 30px;
@@ -19,7 +27,7 @@
   width: 88%;
   margin-right: auto;
   margin-left: auto;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 #tech ul {
@@ -32,6 +40,7 @@
 #social {
   text-align: center;
   margin-bottom: 30px;
+  z-index: -2;
 }
 
 #git-social {
@@ -41,9 +50,75 @@
 #headshot {
   display: block;
   margin-right: 10%;
-  width: 15%;
-  height: 15%;
+  margin-left: 15px;
+  width: 40%;
+  height: 40%;
   border-radius: 250px;
   float: right;
   clear: both;
+}
+
+#certs {
+  width: 95%;
+  margin-bottom: 15px;
+}
+
+.certification {
+  height: 60px;
+}
+
+#certs a:visited {
+  color: white;
+}
+
+#certs a {
+  color: white;
+  text-decoration: underline;
+}
+
+#certs span {
+  clear: both;
+  font-size: 0.55em;
+}
+
+.cert-img {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+}
+
+.cert-name {
+  width: 40px;
+}
+
+/* Desktop/tablet */
+@media only screen and (min-width: 750px) {
+  #certs {
+    font-size: 1.5em;
+  }
+
+  #certs a:hover {
+    color: mediumturquoise;
+  }
+
+  .cert-img {
+    height: 80px;
+    width: 85px;
+    background-color: white;
+  }
+
+  .certification {
+    height: 85px;
+    width: 500px;
+  }
+
+  #headshot {
+    width: 18%;
+    margin-left: 5%;
+    margin-right: 2%;
+  }
+
+  #about-text {
+    font-size: 1.3em;
+  }
 }

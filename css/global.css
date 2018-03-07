@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
 a:hover {
   cursor: pointer;
 }
@@ -11,34 +15,17 @@ a:hover {
   cursor: pointer;
 }
 
-header {
-  width: auto;
-  height: 50px;
-  margin-top: 20px;
-}
-
 #page-footer {
   text-align: center;
-  position: fixed;
-  height: 35px;
+  height: 65px;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: darkgray;
   color: white;
-  font-size: 0.7em;
-  padding-top: 2.5px;
-}
-
-#logo {
-  position: absolute;
-}
-
-#hexagon {
-  margin-left: 30px;
-  width: 13%;
-  height: 13%;
-  float: left;
+  font-size: 0.9em;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .hidden {
@@ -50,36 +37,14 @@ header {
   text-align: center;
 }
 
-.home-text {
-  display: block;
-  position: absolute;
-  margin-left: 30px;
-  margin-top: 40px;
-  font-size: 0.7em;
-}
-
 .footer {
   padding: 9px;
 }
 
 @media only screen and (min-width: 700px) {
-  header {
-    height: 70px;
-  }
-
-  #hexagon {
-    width: 33%;
-    height: 33%;
-  }
-
-  .home-text {
-    margin-left: 46px;
-    margin-top: 88px;
-    font-size: 1em;
-  }
-
   .title {
     margin-bottom: 20px;
     text-align: center;
+    padding-top: 50px;
   }
 }
